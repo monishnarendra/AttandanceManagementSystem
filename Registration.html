@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Register</title>
+        <meta charset="utf-8" />
+        
+
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-messaging.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+        <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBZjr4BJjdndp0Tc_T1PL7ixzCPdhH_naI",
+            authDomain: "ams-rfid.firebaseapp.com",
+            databaseURL: "https://ams-rfid.firebaseio.com",
+            projectId: "ams-rfid",
+            storageBucket: "ams-rfid.appspot.com",
+            messagingSenderId: "713891312286"
+        };
+        firebase.initializeApp(config);
+        </script>
+
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+        <header id="header">
+            <div class="logo">
+                <a href="index.html">Attendance Management System <span>by MNMG</span></a>
+            </div>
+            <a href="#menu">Menu</a>
+        </header>
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="Registration.html">Sign Up</a></li>
+            </ul>
+        </nav>
+		<div id="main">
+            <section class="wrapper">
+                <div class="inner">
+                    <h1>Registration</h1>
+                    <p>Please Fill all Details.</p>
+                    <div class="flex flex-2">
+                        <div class="col col2">
+                            <form method="post">
+                                <div class="row uniform">
+                                    <div class="6u 12u$(xsmall)">
+                                        <input type="text" name="firstName" id="fname" placeholder="First Name">
+                                    </div>
+                                    <div class="6u$ 12u$(xsmall)">
+                                        <input type="text" name="lastName" id="lname" placeholder="Last Name">
+                                    </div>
+                                    <div class="12u$">
+                                        <input type="email" name="email" id="email" placeholder="Email Id">
+                                    </div>
+                                    <div class="12u$">
+                                        <input type="password" name="password" id="password" placeholder="Password">
+                                    </div>
+                                    <div class="12u$">
+                                        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
+                                    </div>
+                                    <div class="12u$">
+                                        <input type="text" name="usn_id" id="usn_id" placeholder="USN / Employee ID">
+                                    </div>
+                                    <div class="12u$">
+                                        <input type="text" name="rfid" id="rfid" placeholder="RFID">
+                                    </div>
+                                    <div class="12u$">
+                                        <div class="select-wrapper">
+                                            <select name="category" id="category">
+                                                <option value="">------ Category ------</option>
+                                                <option value="1">Teacher</option>
+                                                <option value="1">Student</option>
+                                                <option value="1">Administration</option>
+                                                <option value="1">Employee</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="6u 12u$(xsmall)">
+                                            <input type="text" name="displayName" id="displayName" placeholder="Display Name">
+                                        </div>
+                                        <div class="6u$ 12u$(xsmall)" style="padding-top: 40px;">
+                                                <input type="file" name="pic" accept="image/*">
+                                        </div>
+                                    <div class="6u$ 12u$(small)">
+                                        <input type="checkbox" id="human" name="human" checked="">
+                                        <label for="human">Accept Terms</label>
+                                    </div>
+                                </div>
+                                <br>
+                                <a href="otp_Verification.html" onclick="" class="button fit">Fit</a>  
+                            </form>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <footer id="footer">
+            <div class="copyright"><br>
+                <p>&copy; . All rights reserved. Designed by: <a href="https://MNMG.com">MNMG</a>.</p>
+            </div>
+        </footer>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+	</body>
+</html>
